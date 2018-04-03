@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+     #grid{
+        border:5px solid pink;
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+        /*1fr: 첫번째 컬럼은 150 픽셀 부피 가지고 Article은 나머지공간 다쓴다.
+          1fr 1fr : 반반씩 나눠먹음
+          2fr 1fr : 2:1로 나눠먹음
+        */
+     }
+     div{
+       border:5px solid gray;
+     }
+    </style>
+
+  </head>
+  <body>
+    <div id="grid">
+    <div> NAVIGATION</div>
+      <div>ARTICLE</div>
+    </div>
+  </body>
+<!--
+네비랑 아티클을 나란히 나타내기 위해서 H1 테그는 부적절. 제목이라는 의미 있다.
+어떤 의미도 없는 디자인 만을 위한 테그 div 쓴다. 디비전.
+
+div : 블럭 엘리먼트 , 전체 차지해서 자동 줄 바꿈
+span: 인라인 엘리먼트
+
+나란히 놓기위해 그리드 쓰기위해 두개의 태그 감싸는 부모가 필요
+부모테그를 div로 잡고 아이디를 grid로 준다.
+
+-->
+
+</html>

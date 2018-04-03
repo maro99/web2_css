@@ -1,0 +1,54 @@
+<style>
+
+body{
+  margin:0;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+h1{
+  font-size: 45px;
+   text-align: center;
+   border-bottom:1px solid gray;
+   margin:0;
+}
+
+ol{
+  /*border-right:1px solid gray;*/
+  width:80px;
+  margin:0;
+  padding:20px;
+}
+
+#grid ol{
+  padding-left:33px;
+}
+/*모든 ol 중에 조상이 그리드인 테그 선택하는 선택자가된다.*/
+#grid{
+  display:grid;
+  grid-template-columns :140px 1fr;
+}
+#grid #article{
+  padding-left:25px;
+  border-left:1px solid gray;
+}
+
+/*scren width <800px 800보다 작을때 즉 최대가 800일때.*/
+@media(max-width:800px){
+  /*우선 div로 묶고 그리드 화한것 안되도록 한다.
+    display:gird 를 block 으로 바꾼다.
+  */
+  #grid{
+    display:block;
+  }
+/*보기 싫은 선들 다 없엔다. ol 테그의 보더 라이트 속성 없에야한다.
+나는 article 그리드에 보더를 줘서 display:block 으로 처리 끝남. */
+
+/*h1 의 태두리도 없에*/
+h1{
+   border-bottom:none;
+}
+}
+
+</style>

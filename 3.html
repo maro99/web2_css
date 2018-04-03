@@ -1,0 +1,99 @@
+
+
+<!doctype html>
+<html>
+  <head>
+    <title> WEB1- JAVAScript</title>
+    <meta charset= "utf-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116700272-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116700272-1');
+</script>
+
+<style>
+
+body{
+  margin:0;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+h1{
+  font-size: 45px;
+   text-align: center;
+   border-bottom:1px solid gray;
+   margin:0;
+}
+
+ol{
+  /*border-right:1px solid gray;*/
+  width:80px;
+  margin:0;
+  padding:20px;
+}
+
+#grid ol{
+  padding-left:33px;
+}
+/*모든 ol 중에 조상이 그리드인 테그 선택하는 선택자가된다.*/
+#grid{
+  display:grid;
+  grid-template-columns :140px 1fr;
+}
+#grid #article{
+  padding-left:25px;
+  border-left:1px solid gray;
+}
+
+/*scren width <800px 800보다 작을때 즉 최대가 800일때.*/
+@media(max-width:800px){
+  /*우선 div로 묶고 그리드 화한것 안되도록 한다.
+    display:gird 를 block 으로 바꾼다.
+  */
+  #grid{
+    display:block;
+  }
+/*보기 싫은 선들 다 없엔다. ol 테그의 보더 라이트 속성 없에야한다.
+나는 article 그리드에 보더를 줘서 display:block 으로 처리 끝남. */
+
+/*h1 의 태두리도 없에*/
+h1{
+   border-bottom:none;
+}
+}
+</style>
+
+  </head>
+
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+      <div>
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JAVAScript</a></li>
+    </ol>
+  </div>
+  <div id="article">
+    <h2>JAVAScript</h2>
+
+    <img src="java.png" width="100">
+    <p>
+      자바스크립트(영어: JavaScript)는 객체 기반의 스크립트 프로그래밍 언어이다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다.
+    </P>
+  </div>
+</div>
+
+  </body>
+
+</html>
+
+<!-- 여기에 주석 내용이 옵니다. -->
